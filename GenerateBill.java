@@ -2,9 +2,6 @@ public class GenerateBill {
 
     public void generateBill(ChoosedItems choosedItems) {
 
-        // creating the main class object.
-        Main main = new Main();
-
         //initialising the totalprice variable.
         int totalPrice = 0;
 
@@ -15,7 +12,7 @@ public class GenerateBill {
         System.out.println("");
         System.out.println("                            ..Billing..                            ");
         System.out.println("");
-        System.out.println("     Name: " + main.name);
+        System.out.println("     Name: " + Main.name);
         System.out.println("");
         for (int j = 0; j < choosedItems.getChoosedItems().size(); j++) {
             System.out.println("                     " + choosedItems.getChoosedItems().keySet().toArray()[j] + " - "
